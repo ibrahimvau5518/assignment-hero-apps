@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+    "title": "ChatMaster AI",
+    "companyName": "TechNova Labs",
+    "id": 1,
+    "description": "An AI-powered chat assistant that helps with productivity, learning, and creativity.",
+    "size": 45,
+    "reviews": 12500,
+    "ratingAvg": 4.6,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 450 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 950 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 8700 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+    "title": "PhotoTune Pro",
+    "companyName": "PixArt Studio",
+    "id": 2,
+    "description": "A powerful photo editor with AI filters and background remover.",
+    "size": 60,
+    "reviews": 8800,
+    "ratingAvg": 4.4,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 4400 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1599058917212-d750089bc07d",
+    "title": "FitTrack",
+    "companyName": "Healthify Co.",
+    "id": 3,
+    "description": "Track your workouts, calories, and sleep with precision and style.",
+    "size": 38,
+    "reviews": 6700,
+    "ratingAvg": 4.3,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 2900 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1603791452906-b0e6c28ef8a7",
+    "title": "Noteify",
+    "companyName": "BrainSync",
+    "id": 4,
+    "description": "Organize your thoughts and tasks effortlessly with smart reminders.",
+    "size": 25,
+    "reviews": 5400,
+    "ratingAvg": 4.5,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 2600 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+    "title": "GameBoost",
+    "companyName": "GamerX",
+    "id": 5,
+    "description": "Boost your gaming performance and reduce lag instantly.",
+    "size": 50,
+    "reviews": 9800,
+    "ratingAvg": 4.2,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 4400 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4",
+    "title": "MusicMate",
+    "companyName": "TuneCraft",
+    "id": 6,
+    "description": "Stream and download millions of songs ad-free with MusicMate.",
+    "size": 70,
+    "reviews": 24000,
+    "ratingAvg": 4.8,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 5500 },
+      { "name": "5 star", "count": 14400 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7",
+    "title": "CodeRunner",
+    "companyName": "DevPro",
+    "id": 7,
+    "description": "Write and run code snippets in over 30 languages instantly.",
+    "size": 40,
+    "reviews": 4300,
+    "ratingAvg": 4.7,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 2300 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "title": "WeatherGo",
+    "companyName": "SkyNet Solutions",
+    "id": 8,
+    "description": "Accurate weather forecasts with live radar and air quality index.",
+    "size": 32,
+    "reviews": 7100,
+    "ratingAvg": 4.1,
+    "downloads": 2400000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 2700 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "title": "LearnHub",
+    "companyName": "EduSmart",
+    "id": 9,
+    "description": "Online courses and tutorials for coding, design, and business.",
+    "size": 55,
+    "reviews": 13200,
+    "ratingAvg": 4.6,
+    "downloads": 4500000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 7600 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1556742400-b5b7c5121f53",
+    "title": "FinanceFlow",
+    "companyName": "MoneyPro",
+    "id": 10,
+    "description": "Track income, expenses, and savings with beautiful analytics.",
+    "size": 30,
+    "reviews": 9700,
+    "ratingAvg": 4.5,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 5350 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    "title": "TravelBuddy",
+    "companyName": "TripVerse",
+    "id": 11,
+    "description": "Find cheap flights, hotels, and local attractions worldwide.",
+    "size": 48,
+    "reviews": 8500,
+    "ratingAvg": 4.4,
+    "downloads": 3700000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 3800 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1557682250-33bd709cbe85",
+    "title": "MindEase",
+    "companyName": "CalmWave",
+    "id": 12,
+    "description": "Meditation, breathing, and stress-relief exercises for mental wellness.",
+    "size": 42,
+    "reviews": 9100,
+    "ratingAvg": 4.7,
+    "downloads": 4000000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 6050 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980",
+    "title": "QuickScan",
+    "companyName": "Docify",
+    "id": 13,
+    "description": "Turn your camera into a document scanner with OCR support.",
+    "size": 28,
+    "reviews": 5800,
+    "ratingAvg": 4.2,
+    "downloads": 1900000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 2450 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1621508660904-5f99d7f5ed58",
+    "title": "CryptoTrack",
+    "companyName": "BlockWave",
+    "id": 14,
+    "description": "Monitor cryptocurrency prices, trends, and portfolios in real-time.",
+    "size": 49,
+    "reviews": 10400,
+    "ratingAvg": 4.3,
+    "downloads": 3200000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 5300 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "title": "StoryPix",
+    "companyName": "InspireLab",
+    "id": 15,
+    "description": "Create stunning social media stories with templates and effects.",
+    "size": 54,
+    "reviews": 15000,
+    "ratingAvg": 4.8,
+    "downloads": 8000000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 11000 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794",
+    "title": "BookNest",
+    "companyName": "ReadMore",
+    "id": 16,
+    "description": "Discover and read thousands of eBooks and audiobooks anywhere.",
+    "size": 62,
+    "reviews": 11200,
+    "ratingAvg": 4.5,
+    "downloads": 4200000,
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2700 },
+      { "name": "5 star", "count": 6800 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1487014679447-9f8336841d58",
+    "title": "TaskHero",
+    "companyName": "FocusWorks",
+    "id": 17,
+    "description": "Manage daily tasks, goals, and deadlines with motivation streaks.",
+    "size": 33,
+    "reviews": 6300,
+    "ratingAvg": 4.4,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 850 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 2830 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1590608897129-79da98d15990",
+    "title": "VidMateX",
+    "companyName": "MediaPro",
+    "id": 18,
+    "description": "Download videos from multiple platforms with a fast and secure experience.",
+    "size": 66,
+    "reviews": 22000,
+    "ratingAvg": 4.7,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 1700 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 13600 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1517430816045-df4b7de01f6b",
+    "title": "SmartTranslate",
+    "companyName": "LangBridge",
+    "id": 19,
+    "description": "Translate text, voice, and camera input across 100+ languages.",
+    "size": 58,
+    "reviews": 19500,
+    "ratingAvg": 4.6,
+    "downloads": 7000000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 10600 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1531983412531-1f49a365ffed",
+    "title": "SleepSync",
+    "companyName": "DreamTech",
+    "id": 20,
+    "description": "Track your sleep cycle, snoring, and relaxation patterns effortlessly.",
+    "size": 37,
+    "reviews": 5600,
+    "ratingAvg": 4.3,
+    "downloads": 1600000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 2600 }
+    ]
+  }
+]

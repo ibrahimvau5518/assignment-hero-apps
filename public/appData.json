@@ -1,0 +1,146 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+    "title": "ChatMaster AI",
+    "companyName": "TechNova Labs",
+    "id": 1,
+    "description": "An AI-powered chat assistant that helps with productivity, learning, and creativity.",
+    "size": 45,
+    "reviews": 12500,
+    "ratingAvg": 4.6,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 450 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 950 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 8700 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+    "title": "PhotoTune Pro",
+    "companyName": "PixArt Studio",
+    "id": 2,
+    "description": "A powerful photo editor with AI filters and background remover.",
+    "size": 60,
+    "reviews": 8800,
+    "ratingAvg": 4.4,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 4400 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1599058917212-d750089bc07d",
+    "title": "FitTrack",
+    "companyName": "Healthify Co.",
+    "id": 3,
+    "description": "Track your workouts, calories, and sleep with precision and style.",
+    "size": 38,
+    "reviews": 6700,
+    "ratingAvg": 4.3,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 2900 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1603791452906-b0e6c28ef8a7",
+    "title": "Noteify",
+    "companyName": "BrainSync",
+    "id": 4,
+    "description": "Organize your thoughts and tasks effortlessly with smart reminders.",
+    "size": 25,
+    "reviews": 5400,
+    "ratingAvg": 4.5,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 2600 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+    "title": "GameBoost",
+    "companyName": "GamerX",
+    "id": 5,
+    "description": "Boost your gaming performance and reduce lag instantly.",
+    "size": 50,
+    "reviews": 9800,
+    "ratingAvg": 4.2,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 4400 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4",
+    "title": "MusicMate",
+    "companyName": "TuneCraft",
+    "id": 6,
+    "description": "Stream and download millions of songs ad-free with MusicMate.",
+    "size": 70,
+    "reviews": 24000,
+    "ratingAvg": 4.8,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 5500 },
+      { "name": "5 star", "count": 14400 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7",
+    "title": "CodeRunner",
+    "companyName": "DevPro",
+    "id": 7,
+    "description": "Write and run code snippets in over 30 languages instantly.",
+    "size": 40,
+    "reviews": 4300,
+    "ratingAvg": 4.7,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 2300 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "title": "WeatherGo",
+    "companyName": "SkyNet Solutions",
+    "id": 8,
+    "description": "Accurate weather forecasts with live radar and air quality index.",
+    "size": 32,
+    "reviews": 7100,
+    "ratingAvg": 4.1,
+    "downloads": 2400000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 2700 }
+    ]
+  }
+]

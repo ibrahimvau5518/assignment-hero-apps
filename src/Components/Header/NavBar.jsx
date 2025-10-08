@@ -1,13 +1,18 @@
 import React from 'react';
 import gitLogo from '../../assets/gitLogo.png'
 import homeio from '../../assets/logo.png'
+import { Link } from 'react-router';
 
 const NavBar = () => {
   const links = (
     <>
-      <li className='m-2 font-semibold'>Home</li>
-      <li className='m-2 font-semibold'>Apps</li>
-      <li className='m-2 font-semibold'>Installation</li>
+      <Link to='/'>
+        <li className="m-2 font-semibold">Home</li>
+      </Link>
+      <Link to="/apps">
+        <li className="m-2 font-semibold">Apps</li>
+      </Link>
+      <li className="m-2 font-semibold">Installation</li>
     </>
   );
   return (
