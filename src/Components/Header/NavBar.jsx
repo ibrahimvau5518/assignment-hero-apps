@@ -80,7 +80,12 @@ const NavBar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end ">
-        <a className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white">
+        <a
+          href="https://github.com/ibrahimvau5518"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white"
+        >
           <img src={gitLogo} alt="" />
           Contribute
         </a>
