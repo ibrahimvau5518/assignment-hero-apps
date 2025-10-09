@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import App from '../../Components/App/App';
+import { Link } from 'react-router';
 
 
 
@@ -21,10 +22,12 @@ const Apps = ({ data }) => {
           ))}
         </div>
 
-        <div className='flex justify-center mt-5 mb-10'>
-          <button className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white">
-            Show All
-          </button>
+        <div className="flex justify-center mt-5 mb-10">
+          <Link to="/apps">
+            <button className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white">
+              Show All
+            </button>
+          </Link>
         </div>
       </Suspense>
     </div>

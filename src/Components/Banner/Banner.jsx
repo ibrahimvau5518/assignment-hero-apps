@@ -1,7 +1,7 @@
 import React from 'react';
 import heroImage from '../../assets/hero.png'
 import googleImage from '../../assets/google.png'
-import appleImage from '../../assets/appleImg.png'
+import appleImage from '../../assets/appleStore.jpg'
 
 const Banner = () => {
   return (
@@ -14,21 +14,34 @@ const Banner = () => {
           </span>{' '}
           Apps
         </h1>
-        <p className='p-5'>
+        <p className="p-5">
           At HERO.IO , we craft innovative apps designed to make everyday life
           simpler, smarter, and more exciting. <br /> Our goal is to turn your
           ideas into digital experiences that truly make an impact.
         </p>
       </div>
       <div className="flex justify-center m-5 gap-5 p-5">
-        <button className="flex items-center border border-gray-200 rounded-[4px] p-3 font-semibold">
-          <img className="w-8 h-8 mr-2" src={googleImage} alt="" /> Google Play
-        </button>
+        <a
+          href="https://play.google.com/store/games?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center border border-gray-200 rounded-[4px] p-3 font-semibold hover:bg-gray-200 transition-colors duration-200"
+        >
+          <img className="w-8 h-8 mr-2" src={googleImage} alt="" />
+          Google Play
+        </a>
 
-        <button className="flex items-center border border-gray-200 rounded-[4px] p-3 font-semibold">
-          <img className="w-8 h-8 mr-2" src={appleImage} alt="" /> Apple Store
-        </button>
+        <a
+          href="https://www.apple.com/store"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center border border-gray-200 rounded-[4px] p-3 font-semibold hover:bg-gray-200 transition-colors duration-200"
+        >
+          <img className="w-8 h-8 mr-2 rounded-[6px]" src={appleImage} alt="" />
+          Apple Store
+        </a>
       </div>
+
       <div className="flex justify-center">
         <img className="w-2/3" src={heroImage} alt="" />
       </div>

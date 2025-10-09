@@ -1,22 +1,48 @@
 import React from 'react';
-import gitLogo from '../../assets/gitLogo.png'
-import homeio from '../../assets/logo.png'
-import { Link } from 'react-router';
+import gitLogo from '../../assets/gitLogo.png';
+import homeio from '../../assets/logo.png';
+import { Link, NavLink } from 'react-router';
 
 const NavBar = () => {
   const links = (
     <>
-      <Link to='/'>
-        <li className="m-2 font-semibold">Home</li>
-      </Link>
-      <Link to="/apps">
-        <li className="m-2 font-semibold">Apps</li>
-      </Link>
-      <li className="m-2 font-semibold">Installation</li>
+      <NavLink
+        to="/"
+        end
+        className={({ isActive }) =>
+          isActive
+            ? 'm-2 font-semibold text-[#632EE3] border-b-2 border-[#632EE3]'
+            : 'm-2 font-semibold text-gray-700 hover:text-[#632EE3]'
+        }
+      >
+        <li>Home</li>
+      </NavLink>
+
+      <NavLink
+        to="/apps"
+        className={({ isActive }) =>
+          isActive
+            ? 'm-2 font-semibold text-[#632EE3] border-b-2 border-[#632EE3]'
+            : 'm-2 font-semibold text-gray-700 hover:text-[#632EE3]'
+        }
+      >
+        <li>Apps</li>
+      </NavLink>
+
+      <NavLink
+        to="/installation"
+        className={({ isActive }) =>
+          isActive
+            ? 'm-2 font-semibold text-[#632EE3] border-b-2 border-[#632EE3]'
+            : 'm-2 font-semibold text-gray-700 hover:text-[#632EE3]'
+        }
+      >
+        <li>Installation</li>
+      </NavLink>
     </>
   );
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar px-5 bg-base-100 shadow-sm">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -43,10 +69,12 @@ const NavBar = () => {
             {links}
           </ul>
         </div>
-        <a className="flex gap-2 font-bold  items-center text-xl bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
-          <img className="w-8 h-8" src={homeio} alt="" />
-          HERO.IO
-        </a>
+        <Link to="/">
+          <li className="flex gap-2 font-bold  items-center text-xl bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+            <img className="w-8 h-8" src={homeio} alt="" />
+            HERO.IO
+          </li>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
