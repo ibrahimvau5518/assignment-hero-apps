@@ -20,12 +20,13 @@ const InstalledApp = () => {
   
     const handleSort = (type) => {
       setSort(type);
-      if (type === "size") {
-        const sortedBySize = [...installedApps].sort((a, b) => b.size - a.size)
-        setInstalledApps(sortedBySize)
-      } else if (type === "downloads") {
-        const sortedByDownload = [...installedApps].sort((a, b) => b.downloads - a.downloads)
-        setInstalledApps(sortedByDownload)
+      let sortedApps = [...installedApps];
+      if (type === 'High - Low') {
+        sortedApps.sort((a, b) => b.downloads - a.downloads);
+        setInstalledApps(sortedApps);
+      } else if (type === 'Low - High') {
+        sortedApps.sort((a, b) => a.downloads - b.downloads);
+        setInstalledApps(sortedApps);
       }
     };
 
@@ -62,15 +63,13 @@ const InstalledApp = () => {
         <p className="font-semibold">({installedApps.length}) Apps Found</p>
 
         <details className="dropdown">
-          <summary className="btn m-1">
-            Sort by: {sort ?sort:""}
-          </summary>
+          <summary className="btn m-1">Sort by: {sort ? sort : ''}</summary>
           <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
             <li>
-              <a onClick={()=>handleSort("size")}>Size</a>
+              <a onClick={() => handleSort('High - Low')}>High to Low</a>
             </li>
             <li>
-              <a onClick={()=>handleSort("downloads")}>Downloads</a>
+              <a onClick={() => handleSort('Low - High')}>Low to High</a>
             </li>
           </ul>
         </details>

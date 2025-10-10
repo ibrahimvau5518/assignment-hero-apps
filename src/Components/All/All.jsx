@@ -3,15 +3,15 @@ import { Link, useLoaderData } from 'react-router';
 import AllCards from '../AllCards/AllCards';
 import { CiSearch } from 'react-icons/ci';
 import Loading from '../Loading/Loading';
+import SearchLoading from '../SearchLoading/SearchLoading';
 
 const All = () => {
   const data = useLoaderData();
   const [searchData, setSearchData] = useState('');
   const [filteredApps, setFilteredApps] = useState(data);
-  const [isLoading, setIsLoading] = useState(false); // ✅ আলাদা নাম ব্যবহার করো
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    // ✅ Search field খালি থাকলে full data দেখাবে
     if (!searchData.trim()) {
       setFilteredApps(data);
       setIsLoading(false);
@@ -26,8 +26,7 @@ const All = () => {
       );
       setFilteredApps(filtered);
 
-      // লোডার অন্তত 600ms দেখাবে
-      setTimeout(() => setIsLoading(false), 600);
+      setTimeout(() => setIsLoading(false), 200);
     }, 300);
 
     return () => clearTimeout(searchDelay);
@@ -35,8 +34,7 @@ const All = () => {
 
   return (
     <div className="my-10 relative">
-      {/* ✅ Loading Overlay */}
-      {isLoading && <Loading show={isLoading} />}
+      {/* {isLoading && <Loading show={isLoading} />} */}
 
       <div className="text-center">
         <h1 className="text-4xl font-bold text-[#001931]">Trending Apps</h1>
@@ -59,6 +57,8 @@ const All = () => {
         </div>
       </div>
 
+      {isLoading && <SearchLoading/>}
+
       {!isLoading && (
         <>
           {filteredApps.length > 0 ? (
@@ -73,7 +73,13 @@ const All = () => {
             <div className="text-center text-2xl font-semibold my-10">
               <h1 className="text-4xl mb-10">No Apps Found</h1>
               <Link to="/apps">
-                <button className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white">
+                  <button
+                    className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white"
+                    onClick={() => {
+                      setSearchData('');
+                      setFilteredApps(data);
+                    }}
+                  >
                   Show All
                 </button>
               </Link>
