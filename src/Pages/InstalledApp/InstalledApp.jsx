@@ -1,57 +1,59 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import downloadIcon from '../../assets/icon-downloads.png';
 import ratingIcon from '../../assets/icon-ratings.png';
 import {
   getInstalledApps,
   saveInstalledApps,
 } from '../../LocalStorage/LocalStorage';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const InstalledApp = () => {
   const [installedApps, setInstalledApps] = useState([]);
-  // console.log(installedApps)
   const [sort, setSort] = useState('');
-
-
 
   useEffect(() => {
     setInstalledApps(getInstalledApps());
   }, []);
-  
-  
-    const handleSort = (type) => {
-      setSort(type);
-      let sortedApps = [...installedApps];
-      if (type === 'High - Low') {
-        sortedApps.sort((a, b) => b.downloads - a.downloads);
-        setInstalledApps(sortedApps);
-      } else if (type === 'Low - High') {
-        sortedApps.sort((a, b) => a.downloads - b.downloads);
-        setInstalledApps(sortedApps);
-      }
-    };
 
-  const handleUninstall = id => {
+  const handleSort = type => {
+    setSort(type);
+    let sortedApps = [...installedApps];
+    if (type === 'High - Low') {
+      sortedApps.sort((a, b) => b.downloads - a.downloads);
+    } else if (type === 'Low - High') {
+      sortedApps.sort((a, b) => a.downloads - b.downloads);
+    }
+    setInstalledApps(sortedApps);
+  };
+
+  const handleUninstall = (id, title) => {
     const updated = installedApps.filter(app => app.id !== id);
     setInstalledApps(updated);
     saveInstalledApps(updated);
+
+    toast.success(`${title} successfully uninstalled!`, {
+      position: 'top-right',
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      theme: 'colored',
+    });
   };
 
   const formatNumber = num => {
-    if (num >= 1_000_000_000) {
-      return (num / 1_000_000_000).toFixed(1) + 'B'; // Billion
-    } else if (num >= 1_000_000) {
-      return (num / 1_000_000).toFixed(1) + 'M'; // Million
-    } else if (num >= 1_000) {
-      return (num / 1_000).toFixed(1) + 'K'; // Thousand
-    } else {
-      return num.toString();
-    }
+    if (num >= 1_000_000_000) return (num / 1_000_000_000).toFixed(1) + 'B';
+    if (num >= 1_000_000) return (num / 1_000_000).toFixed(1) + 'M';
+    if (num >= 1_000) return (num / 1_000).toFixed(1) + 'K';
+    return num.toString();
   };
-
-
 
   return (
     <div className="my-10">
+      <ToastContainer />
+
       <div className="text-center">
         <h1 className="text-4xl font-bold text-[#001931]">Installed Apps</h1>
         <p className="my-4 text-[#627382]">
@@ -79,7 +81,7 @@ const InstalledApp = () => {
         {installedApps.map(app => (
           <div
             key={app.id}
-            className="flex items-center justify-between bg-white mb-3 p-3 rounded-lg"
+            className="flex items-center justify-between bg-white mb-3 p-3 rounded-lg shadow-sm"
           >
             {/* Left Side */}
             <div className="flex items-center">
@@ -93,11 +95,11 @@ const InstalledApp = () => {
                   {app.title}: {app.companyName}
                 </h2>
                 <div className="flex items-center gap-4">
-                  <h3 className="flex font-semibold items-center text-[#00D390] ">
-                    <img className=" w-4 h-4 mr-2" src={downloadIcon} alt="" />
+                  <h3 className="flex font-semibold items-center text-[#00D390]">
+                    <img className="w-4 h-4 mr-2" src={downloadIcon} alt="" />
                     {formatNumber(app.downloads)}
                   </h3>
-                  <h3 className="flex font-semibold items-center text-[#FF8811] ">
+                  <h3 className="flex font-semibold items-center text-[#FF8811]">
                     <img className="w-4 h-4 mr-1" src={ratingIcon} alt="" />
                     {app.ratings.length}
                   </h3>
@@ -109,7 +111,7 @@ const InstalledApp = () => {
             {/* Right Side */}
             <div className="mr-2">
               <button
-                onClick={() => handleUninstall(app.id)}
+                onClick={() => handleUninstall(app.id, app.title)}
                 className="bg-[#00D390] text-white px-4 py-2 rounded-md hover:bg-[#009264] transition"
               >
                 Uninstall
