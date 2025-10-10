@@ -1,4 +1,4 @@
-<!-- 
+
 
 *App Name: HERO.IO
 
@@ -6,4 +6,3 @@
 
 *Technologies: React
 
- -->
